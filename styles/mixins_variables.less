@@ -1,0 +1,21 @@
+@sans: 'Raleway', sans-serif;
+@mcolor:rgba(78,77,77,0.7);
+@w: 75%;
+@red: rgba(255,0,0,0.8);
+@mix_c: rgba(205,75,75,0.9);
+/*Grid mixins*/
+.col(@s; @f) {
+    grid-column: @s / span @f;
+}
+.row(@s; @f) {
+    grid-row: @s / span @f;
+}
+/*General Mixins*/
+.m_auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Form width*/
+.f_w() {
+    width: @w;
+}

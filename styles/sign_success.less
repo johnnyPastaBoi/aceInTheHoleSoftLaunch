@@ -1,0 +1,49 @@
+.sign_up {
+  display: block !important;
+  * {
+    margin-top: 20px !important;
+  }
+  h2 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+    font-size: 30px;
+    .col(1,3);
+  }
+}
+.gender {
+  text-align: center;
+  height: 35px;
+  border: none;
+  font-family: @sans;
+  .col(1,3);
+
+}
+.event_area {
+  .col(1,3);
+  select {
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-family: @sans;
+    font-size: 15px;
+  }
+  .satevent, .sunevent {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 10px;
+    label {
+      margin: 0 10px;
+    }
+    input {
+      margin-top: 0;
+    }
+  }
+  .input {
+    border: none;
+  }
+}
+.em_contact {
+  .col(1,3);
+  display: flex;
+}

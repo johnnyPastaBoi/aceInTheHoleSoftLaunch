@@ -1,0 +1,150 @@
+@media only screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 2fr 20px;
+    grid-template-rows: 20px 650px 20px 650px 20px 650px;
+    section {
+      margin: 0;
+    }
+    .weather {
+      .col(2, 1);
+      .row(4, 1);
+    }
+    .para {
+      .col(4, 1);
+      .row(2, 1);
+    }
+    .list {
+      .col(4, 1);
+      .row(4, 1);
+    }
+    .form {
+      .col(2, 3);
+      .row(6, 1);
+    }
+    .social {
+      .col(2, 1);
+      .row(2, 1);
+      max-height: 100%;
+    }
+  }
+  nav {
+    div {
+      img {
+        margin-left: 30px;
+      }
+    }
+    ul {
+      float: right;
+      font-size: 25px;
+      padding: 10px;
+      li {
+        display: inline-block;
+        a {
+          border-radius: 8px;
+          padding: 8px 20px;
+          transition: 0.3s;
+        }
+        a:active {
+          background-color: rgba(255, 255, 255, 0.8);
+          color: #000 !important;
+        }
+      }
+      //Removes active pseudo defined in mobile view
+      li:active {
+        background-color: rgb(34, 34, 34);
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  header {
+    clear: both;
+    background-color: rgb(34, 34, 34);
+    .m_auto;
+    .slide_show {
+      .m_auto;
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
+  nav {
+    box-shadow: 0px 10px 9px -6px @mix_c;
+    div {
+      display: inline-block;
+    }
+    max-height: 150px;
+    height: 100%;
+    img {
+      margin-left: 40px;
+    }
+    ul {
+      background-color: rgba(255, 255, 255, 0.0);
+      float: right;
+      position: relative;
+      top: 0;
+      width: auto;
+      margin: 30px 20px;
+      font-size: 25px;
+      padding: 10px;
+      li {
+        display: inline-block;
+      }
+      a:hover {
+        background-color: @red;
+      }
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: 20px 25% 20px 25% 20px 25% 20px 25% 20px;
+    grid-template-rows: 20px auto 20px auto 20px;
+    .weather {
+      .col(2, 1);
+      .row(2, 1);
+    }
+    .para {
+      .col(4, 3);
+      .row(2, 1);
+    }
+    .list {
+      .col(6, 3);
+      .row(4, 1);
+    }
+    .form {
+      .col(2, 3);
+      .row(4, 1);
+      form {
+        input, textarea {
+          .col(2, 2);
+        }
+        label {
+          .col(1, 1);
+        }
+      }
+    }
+    .social {
+      .col(8, 1);
+      .row(2, 1);
+    }
+  }
+  footer {
+    box-shadow: 0px 10px 9px -6px @mix_c;
+    div {
+      margin-left: 280px;
+    }
+    ul {
+      margin-right: 280px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
